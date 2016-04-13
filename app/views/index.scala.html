@@ -1,0 +1,9 @@
+@(users: Array[SmilyU])
+
+@main("Hello") {
+  <h1>Users</h1>
+
+  @for(i <- 0 until 2) {
+            @users(i)
+  }
+}

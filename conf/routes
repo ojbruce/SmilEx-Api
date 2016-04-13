@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# GETTING SMILERS
+GET     /                           controllers.Api.index
+GET     /users                      controllers.SmilyUApi.list
+GET     /randomUser                 controllers.SmilyUApi.getRandomSmilyU
+
+# CRUD SMILY FACES
+POST    /smilyFace                  controllers.SmilyUApi.postFace
+GET     /smilyFace                  controllers.SmilyUApi.getFace
